@@ -8,7 +8,7 @@ const router = express.Router()
 
 //Index 
 router.get('/', (req, res) => {
-    res.send('Posts list')
+    res.json(posts)
 })
 
 //Show 
