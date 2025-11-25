@@ -13,7 +13,7 @@ router.get('/', (req, res) => {
 
 //Show 
 router.get('/:id', (req, res) => {
-    res.send(`Post with id:${req.params.id}`)
+    res.json(posts.find((post) => post.id == req.params.id))
 })
 
 //Store
