@@ -13,7 +13,8 @@ router.get('/', (req, res) => {
 
 //Show 
 router.get('/:id', (req, res) => {
-    res.json(posts.find((post) => post.id == req.params.id))
+    const post = posts.find((post) => post.id == req.params.id)
+    res.json(post)
 })
 
 //Store
